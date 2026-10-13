@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página de votação da Kirby's TV.">
+    <title>Votação | Kirby's TV</title>
+  </head>
+  <body>
+    <header>
+      <h1>Votação</h1>
+      <nav aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="materia.html">Matéria</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="votação.html">Votação</a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="titulo-enquete">
+        <h2 id="titulo-enquete">Qual jogo do Kirby você prefere?</h2>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Participe da enquete</legend>
+
+            <p>
+              <label for="nome-participante">Nome ou apelido:</label>
+              <input type="text" id="nome-participante" name="nome" autocomplete="nickname" required>
+            </p>
+
+            <p>
+              <label for="busca-jogo">Pesquise um jogo da série:</label>
+              <input type="search" id="busca-jogo" name="busca-jogo">
+            </p>
+
+            <p>
+              <label for="data-jogada">Quando você jogou Kirby pela primeira vez?</label>
+              <input type="date" id="data-jogada" name="data-jogada">
+            </p>
+
+            <p>
+              <label for="horas-jogo">Quantas horas você costuma jogar por semana?</label>
+              <input type="number" id="horas-jogo" name="horas-jogo" min="0" max="168">
+            </p>
+
+            <p>
+              <label for="link-jogo">Link de uma página sobre seu jogo favorito (opcional):</label>
+              <input type="url" id="link-jogo" name="link-jogo">
+            </p>
+
+            <fieldset>
+              <legend>Qual jogo do Kirby você prefere?</legend>
+
+              <input type="radio" id="kirby-gba" name="jogo-favorito" value="kirby-gba" required>
+              <label for="kirby-gba">Kirby: Nightmare in Dream Land (GBA)</label>
+              <br>
+
+              <input type="radio" id="kirby-wii" name="jogo-favorito" value="kirby-wii">
+              <label for="kirby-wii">Kirby's Return to Dream Land (Wii)</label>
+              <br>
+
+              <input type="radio" id="outro-jogo" name="jogo-favorito" value="outro">
+              <label for="outro-jogo">Outro jogo do Kirby</label>
+            </fieldset>
+
+            <p>
+              <input type="checkbox" id="mais-conteudo" name="mais-conteudo" value="sim">
+              <label for="mais-conteudo">Quero ver mais conteúdo sobre jogos do Kirby.</label>
+            </p>
+
+            <p>
+              <label for="avaliacao-site">Avalie o conteúdo desta página de 1 a 5:</label>
+              <input type="range" id="avaliacao-site" name="avaliacao-site" min="1" max="5" value="3">
+            </p>
+          </fieldset>
+
+          <button type="submit">Enviar votação</button>
+        </form>
+        <p>Este formulário demonstra validação nativa do navegador; as respostas não são armazenadas.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Games Retrô</p>
+    </footer>
+  </body>
+</html>
